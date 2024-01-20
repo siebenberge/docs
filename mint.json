@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
+  "openapi": "https://developers.payrexx.com/openapi",
   "name": "Starter Kit",
   "logo": {
     "dark": "/logo/dark.svg",
@@ -75,11 +76,75 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Paylink",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/retrieve-a-paylink",
+        "api-reference/endpoint/create-a-paylink",
+        "api-reference/endpoint/remove-a-paylink"
+      ]
+    },
+    {
+      "group": "Gateway",
+      "pages": [
+        "api-reference/endpoint/retrieve-a-gateway",
+        "api-reference/endpoint/create-a-gateway",
+        "api-reference/endpoint/delete-a-gateway"
+      ]
+    },
+    {
+      "group": "Transaction",
+      "pages": [
+        "api-reference/endpoint/retrieve-a-transaction",
+        "api-reference/endpoint/retrieve-transactions",
+        "api-reference/endpoint/create-a-cash-transaction",
+        "api-reference/endpoint/charge-a-pre-authorizedreserved-transaction",
+        "api-reference/endpoint/pre-authorize-a-tokenization",
+        "api-reference/endpoint/refund-a-transaction",
+        "api-reference/endpoint/capture-a-transaction",
+        "api-reference/endpoint/send-mail-receipt",
+        "api-reference/endpoint/delete-a-reserved-transaction"
+      ]
+    },
+    {
+      "group": "Design",
+      "pages": [
+        "api-reference/endpoint/retrieve-a-design",
+        "api-reference/endpoint/retrieve-designs",
+        "api-reference/endpoint/create-a-design",
+        "api-reference/endpoint/update-a-design",
+        "api-reference/endpoint/delete-a-design"
+      ]
+    },
+    {
+      "group": "Payment Provider",
+      "pages": [
+        "api-reference/endpoint/retrieve-all-payment-providers"
+      ]
+    },
+    {
+      "group": "Payment Method",
+      "pages": [
+        "api-reference/endpoint/get-all-active-payment-methods",
+        "api-reference/endpoint/get-one-payment-method"
+      ]
+    },
+    {
+      "group": "QR Code",
+      "pages": [
+        "api-reference/endpoint/retrieve-a-qr-code",
+        "api-reference/endpoint/create-a-qr-code",
+        "api-reference/endpoint/delete-a-qr-code",
+        "api-reference/endpoint/delete-a-qr-code-scan"
+
+      ]
+    },
+    {
+      "group": "Payout",
+      "pages": [
+        "api-reference/endpoint/retrieve-payouts",
+        "api-reference/endpoint/create-manual-payout",
+        "api-reference/endpoint/retrieve-a-payout-without-details",
+        "api-reference/endpoint/retrieve-a-payout-with-details"
       ]
     }
   ],
