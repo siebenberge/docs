@@ -1,0 +1,59 @@
+---
+title: 'Authentication'
+description: 'Learn how to authenticate with our API.'
+---
+
+<Note>
+This documentation is crucial **only if you are not using an SDK** to interact with our API. If you're utilizing an SDK, it handles the API signature for you.
+</Note>
+
+
+#### Understanding API Signature
+
+An API signature is a security measure implemented to ensure that API requests are made by authenticated users. It is a **HMAC** (Hash-based Message Authentication Code) as defined in [RFC 2104](https://tools.ietf.org/html/rfc2104). This signature provides a way to verify the integrity and the origin of the request.
+
+#### Why API Signature?
+
+For enhanced security, we require you to pass an API signature with each request. This signature is calculated using the API Secret of your instance. It helps in preventing unauthorized access and ensures that the request is coming from a trusted source.
+
+#### How to Generate an API Signature
+
+1. **Parameter Name**: The name of the API signature parameter should be `ApiSignature`.
+
+2. **Excluded Parameter**: When calculating the signature, include all request parameters **except** the parameter named `instance`.
+
+3. **Steps to Generate the Signature**:
+   - **Step 1**: Create a URL-encoded query string from your request parameters (excluding `instance`). For example, if your parameters are `model=Page` and `id=17`, the query string would be `model=Page&id=17`.
+   - **Step 2**: Calculate a binary HMAC hash using your instance's API Secret as the key.
+   - **Step 3**: Encode the binary HMAC hash with Base64.
+
+#### Example
+
+Let's assume your API Secret is `secretKey`, and you want to make a request with the parameters `model=Page` and `id=17`.
+
+1. **Build Query String**: 
+   ```
+   model=Page&id=17
+   ```
+   
+2. **Calculate HMAC Hash**: Use the API Secret (`secretKey`) to calculate the binary HMAC hash of the query string. The exact method depends on your programming language. Here's a pseudocode example:
+   ```
+   hmacHash = calculateHMAC("model=Page&id=17", "secretKey")
+   ```
+   
+3. **Base64 Encode**: Encode the binary HMAC hash into a Base64 string.
+   ```
+   apiSignature = base64Encode(hmacHash)
+   ```
+   
+4. **Include in Request**: Append the `ApiSignature` parameter to your API request.
+   ```
+   https://yourapi.com/request?model=Page&id=17&ApiSignature=apiSignatureValue
+   ```
+
+Please replace `calculateHMAC` and `base64Encode` with the actual functions provided by your programming language or libraries.
+
+#### Note
+
+Ensure that you keep your API Secret secure and never expose it in client-side code or places where it could be accessed by unauthorized users.
+

@@ -1,16 +1,14 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "openapi": "https://developers.payrexx.com/openapi",
-  "name": "Starter Kit",
+  "name": "Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#271639",
+    "light": "#faf5ff",
+    "dark": "#2e1a43",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
@@ -19,12 +17,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://www.zahls.ch/support/"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://login.zahls.ch/"
   },
   "tabs": [
     {
@@ -32,47 +30,12 @@
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Get started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
+        "api-reference/authentification"
       ]
     },
     {
@@ -135,7 +98,6 @@
         "api-reference/endpoint/create-a-qr-code",
         "api-reference/endpoint/delete-a-qr-code",
         "api-reference/endpoint/delete-a-qr-code-scan"
-
       ]
     },
     {
@@ -148,9 +110,8 @@
       ]
     }
   ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+  "api": {
+    "baseUrl": "https://api.zahls.ch/"
+
   }
 }
