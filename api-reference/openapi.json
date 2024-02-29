@@ -433,6 +433,10 @@
                       ]
                     }
                   },
+                  "Python JSON dict": {
+                    "value": "{  \n   'referenceId':'test',\n   'hash':'1fc5588c482e5e787eb271555b979f98',\n   'subscriptionState':False,\n   'status':'(waiting|confirmed|authorized|reserved)',\n   'name':'',\n   'amount':200,\n   'vatRate':7.7,\n   'sku':'P01122000',\n   'link':'https://demo.payrexx.com/?payment=1fc5588c482e5e787eb271555b979f98',\n   'preAuthorization':0,\n   'subscriptionPeriodMinAmount':0,\n   'id':38,\n   'createdAt':1481923840,\n   'currency':'CHF',\n   'subscriptionInterval':'',\n   'purpose':{  \n      '7':'test',\n      '2':'test',\n      '1':'test',\n      '3':'test',\n      '4':'test'\n   },\n   'api':True,\n   'subscriptionCancellationInterval':'',\n   'fields':{  \n      'header':{  \n         'names':{  \n            'nl':'',\n            'de':'Kontaktdaten',\n            'it':'Dati di contatto',\n            'en':'Contact details',\n            'fr':'DonnÃ©es de contact'\n         },\n         'active':True,\n         'mandatory':False\n      }\n   },\n   'title':'test',\n   'psp':1,\n   'description':'test',\n   'subscriptionPeriod':'',\n   'invoices':[  \n\n   ]\n}"
+                  }
+                },
                 "schema": {
                   "type": "object",
                   "properties": {
@@ -464,7 +468,7 @@
                           },
                           "link": {
                             "type": "string",
-                            "example": "https://demo.zahls.ch/?payment=382c85eab7a86278e3c3b06a23af2358"
+                            "example": "https://demo.payrexx.com/?payment=382c85eab7a86278e3c3b06a23af2358"
                           },
                           "invoices": {
                             "type": "array"
@@ -842,7 +846,7 @@
               "text/plain": {
                 "examples": {
                   "PHP Object": {
-                    "value": "Payrexx\\Models\\Response\\Invoice::__set_state(array(\n   'hash' => '382c85eab7a86278e3c3b06a23af2358',\n   'link' => 'https://demo.zahls.ch/?payment=382c85eab7a86278e3c3b06a23af2358',\n   'status' => '(waiting|confirmed|authorized|reserved)',\n   'createdAt' => 1418392958,\n   'referenceId' => 'Order number of my online shop application',\n   'title' => '',\n   'description' => '',\n   'psp' => 1,\n   'name' => 'Online-Shop payment #001',\n   'purpose' => 'Shop Order #001',\n   'amount' => 590,\n   'vatRate' => 7.7,\n   'currency' => 'CHF',\n   'sku' => 'P01122000',\n   'preAuthorization' => 0,\n   'successRedirectUrl' => NULL,\n   'failedRedirectUrl' => NULL,\n   'subscriptionState' => false,\n   'subscriptionInterval' => '',\n   'subscriptionPeriod' => '',\n   'subscriptionPeriodMinAmount' => '',\n   'subscriptionCancellationInterval' => '',\n   'fields' => \n  array (\n    'title' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'forename' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'surname' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'company' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'street' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'postcode' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'place' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'country' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'phone' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'email' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'date_of_birth' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'terms' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'custom_field_1' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n      'names' => \n      array (\n        'de' => 'This is a field',\n        'en' => 'This is a field',\n        'fr' => 'This is a field',\n        'it' => 'This is a field',\n      ),\n    ),\n    'custom_field_2' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n    'custom_field_3' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n    'custom_field_4' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n    'custom_field_5' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n  ),\n   'id' => 1,\n))"
+                    "value": "Payrexx\\Models\\Response\\Invoice::__set_state(array(\n   'hash' => '382c85eab7a86278e3c3b06a23af2358',\n   'link' => 'https://demo.payrexx.com/?payment=382c85eab7a86278e3c3b06a23af2358',\n   'status' => '(waiting|confirmed|authorized|reserved)',\n   'createdAt' => 1418392958,\n   'referenceId' => 'Order number of my online shop application',\n   'title' => '',\n   'description' => '',\n   'psp' => 1,\n   'name' => 'Online-Shop payment #001',\n   'purpose' => 'Shop Order #001',\n   'amount' => 590,\n   'vatRate' => 7.7,\n   'currency' => 'CHF',\n   'sku' => 'P01122000',\n   'preAuthorization' => 0,\n   'successRedirectUrl' => NULL,\n   'failedRedirectUrl' => NULL,\n   'subscriptionState' => false,\n   'subscriptionInterval' => '',\n   'subscriptionPeriod' => '',\n   'subscriptionPeriodMinAmount' => '',\n   'subscriptionCancellationInterval' => '',\n   'fields' => \n  array (\n    'title' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'forename' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'surname' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'company' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'street' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'postcode' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'place' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'country' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'phone' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'email' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'date_of_birth' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n    ),\n    'terms' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n    ),\n    'custom_field_1' => \n    array (\n      'active' => true,\n      'mandatory' => true,\n      'names' => \n      array (\n        'de' => 'This is a field',\n        'en' => 'This is a field',\n        'fr' => 'This is a field',\n        'it' => 'This is a field',\n      ),\n    ),\n    'custom_field_2' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n    'custom_field_3' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n    'custom_field_4' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n    'custom_field_5' => \n    array (\n      'active' => false,\n      'mandatory' => false,\n      'names' => \n      array (\n        'de' => '',\n        'en' => '',\n        'fr' => '',\n        'it' => '',\n      ),\n    ),\n  ),\n   'id' => 1,\n))"
                   }
                 }
               }
@@ -2461,98 +2465,99 @@
               "application/json": {
                 "examples": {
                   "Raw": {
-                    "value": {  
-                      "status":"success",
-                      "data":[  
-                          {  
-                              "id":1,
-                              "status":"waiting",
-                              "hash":"db8c618c87dc91f100292f6ffd9c5044",
-                              "referenceId":"975382",
-                              "link":"https:\/\/demo.zahls.ch\/?payment=db8c618c87dc91f100292f6ffd9c5044",
-                              "invoices":[],
-                              "preAuthorization":0,
-                              "reservation":0,
-                              "fields":{  
-                                  "title":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "forename":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "surname":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "company":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "street":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "postcode":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "place":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "country":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "phone":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "email":{  
-                                      "active":false,
-                                      "mandatory":true
-                                  },
-                                  "date_of_birth":{  
-                                      "active":false,
-                                      "mandatory":true,
-                                      "names":{  
-                                          "de":"",
-                                          "en":"",
-                                          "fr":"",
-                                          "it":""
-                                      }
-                                  },
-                                  "terms": {
-                                      "active": true,
-                                      "mandatory": true
-                                  },
-                                  "privacy_policy": {
-                                      "active": true,
-                                      "mandatory": true
-                                  },
-                                  "text":{  
-                                      "active":false,
-                                      "mandatory":true,
-                                      "names":{  
-                                          "de":"Benutzerdefiniertes Feld (DE)",
-                                          "en":"Benutzerdefiniertes Feld (EN)",
-                                          "fr":"Benutzerdefiniertes Feld (FR)",
-                                          "it":"Benutzerdefiniertes Feld (IT)"
-                                      }
-                                  }
-                              },
-                              "psp":[],
-                              "pm": [],
-                              "amount":8925,
-                              "vatRate":7.7,
-                              "currency":"CHF",
-                              "sku":"P01122000",
-                              "createdAt":1475578052
-                          }
+                    "value": {
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": 1,
+                          "status": "waiting",
+                          "hash": "db8c618c87dc91f100292f6ffd9c5044",
+                          "referenceId": "975382",
+                          "link": "https:\/\/demo.zahls.ch\/?payment=db8c618c87dc91f100292f6ffd9c5044",
+                          "invoices": [],
+                          "preAuthorization": 0,
+                          "reservation": 0,
+                          "fields": {
+                            "title": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "forename": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "surname": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "company": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "street": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "postcode": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "place": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "country": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "phone": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "email": {
+                              "active": false,
+                              "mandatory": true
+                            },
+                            "date_of_birth": {
+                              "active": false,
+                              "mandatory": true,
+                              "names": {
+                                "de": "",
+                                "en": "",
+                                "fr": "",
+                                "it": ""
+                              }
+                            },
+                            "terms": {
+                              "active": true,
+                              "mandatory": true
+                            },
+                            "privacy_policy": {
+                              "active": true,
+                              "mandatory": true
+                            },
+                            "text": {
+                              "active": false,
+                              "mandatory": true,
+                              "names": {
+                                "de": "Benutzerdefiniertes Feld (DE)",
+                                "en": "Benutzerdefiniertes Feld (EN)",
+                                "fr": "Benutzerdefiniertes Feld (FR)",
+                                "it": "Benutzerdefiniertes Feld (IT)"
+                              }
+                            }
+                          },
+                          "psp": [],
+                          "pm": [],
+                          "amount": 8925,
+                          "vatRate": 7.7,
+                          "currency": "CHF",
+                          "sku": "P01122000",
+                          "createdAt": 1475578052
+                        }
                       ]
-                  }},
+                    }
+                  },
                   "Python JSON dict": {
                     "value": "{  \n   'createdAt':1481924665,\n   'amount':8925,\n   'vatRate':7.7,\n   'hash':'2665a4aa5508f2451df403ba04314477',\n   'psp':0,\n   'link':'https://demo.zahls.ch/?payment=2665a4aa5508f2451df403ba04314477',\n   'currency':'CHF',\n   'sku':'P01122000',\n   'referenceId':'',\n   'status':'waiting',\n   'id':1,\n   'invoices':[  \n\n   ],\n   'preAuthorization':0,\n   'reservation':0,\n   'fields':[  \n\n   ]\n}"
                   }
@@ -3629,19 +3634,19 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value":{  
-                      "status":"success",
-                      "data":[  
-                          {  
-                              "id":2,
-                              "uuid":"81d545ca",
-                              "time":"2017-10-16 12:29:12",
-                              "status":"confirmed",
-                              "lang":"de",
-                              "psp":"Payrexx_Payments"
-                          }
+                    "value": {
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": 2,
+                          "uuid": "81d545ca",
+                          "time": "2017-10-16 12:29:12",
+                          "status": "confirmed",
+                          "lang": "de",
+                          "psp": "Payrexx_Payments"
+                        }
                       ]
-                  }
+                    }
                   }
                 },
                 "schema": {
@@ -3742,81 +3747,81 @@
                 "examples": {
                   "Result": {
                     "value": {
-                      "status":"success",
-                      "data":[
-                          {
-                              "id":1,
-                              "uuid":"f384000b",
-                              "status":"authorized",
-                              "time":"2020-01-20 15:56:02",
-                              "lang":"de",
-                              "pageUuid":"892dcf5c",
-                              "payment":{
-                                  "brand":"visa"
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": 1,
+                          "uuid": "f384000b",
+                          "status": "authorized",
+                          "time": "2020-01-20 15:56:02",
+                          "lang": "de",
+                          "pageUuid": "892dcf5c",
+                          "payment": {
+                            "brand": "visa"
+                          },
+                          "payoutUuid": "abcd1234",
+                          "psp": "Payrexx_Payments",
+                          "pspId": 26,
+                          "mode": "LIVE",
+                          "referenceId": "ORDER#321",
+                          "invoice": {
+                            "currencyAlpha3": "CHF",
+                            "products": [
+                              {
+                                "quantity": 1,
+                                "name": "Hoodie",
+                                "amount": 5900
                               },
-                              "payoutUuid": "abcd1234",
-                              "psp":"Payrexx_Payments",
-                              "pspId":26,
-                              "mode":"LIVE",
-                              "referenceId":"ORDER#321",
-                              "invoice":{
-                                  "currencyAlpha3":"CHF",
-                                  "products":[
-                                      {
-                                          "quantity":1,
-                                          "name":"Hoodie",
-                                          "amount":5900
-                                      },
-                                      {
-                                          "quantity":2,
-                                          "name":"T-Shirt",
-                                          "amount":2850
-                                      }
-                                  ],
-                                  "discount":{
-                                      "code":"SUPERSALE",
-                                      "percentage":33,
-                                      "amount":3828
-                                  },
-                                  "shippingAmount":150000,
-                                  "totalAmount":9272,
-                                  "customFields":{
-                                      "20":{
-                                          "name":"Additional Information",
-                                          "value":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                                      }
-                                  }
-                              },
-                              "refundable": true,
-                              "partiallyRefundable": true,
-                              "contact":{
-                                  "id":16,
-                                  "uuid":"9c9c0282",
-                                  "company":"FeelGood",
-                                  "title":"mister",
-                                  "firstname":"Hans",
-                                  "lastname":"Schmid",
-                                  "street":"Dorstrasse 11",
-                                  "zip":"1234",
-                                  "place":"Habern",
-                                  "country":"Schweiz",
-                                  "countryISO":"CH",
-                                  "date_of_birth":"10.03.1989",
-                                  "email":"info@example.com",
-                                  "phone":"+413312345678",
-                                  "delivery_company":"NewFashion",
-                                  "delivery_title":"miss",
-                                  "delivery_firstname":"Fabienne",
-                                  "delivery_lastname":"Muster",
-                                  "delivery_street":"Seestrasse 39",
-                                  "delivery_zip":"4321",
-                                  "delivery_place":"Nechters",
-                                  "delivery_country":"Schweiz",
-                                  "delivery_countryISO":"CH"
+                              {
+                                "quantity": 2,
+                                "name": "T-Shirt",
+                                "amount": 2850
                               }
+                            ],
+                            "discount": {
+                              "code": "SUPERSALE",
+                              "percentage": 33,
+                              "amount": 3828
+                            },
+                            "shippingAmount": 150000,
+                            "totalAmount": 9272,
+                            "customFields": {
+                              "20": {
+                                "name": "Additional Information",
+                                "value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                              }
+                            }
+                          },
+                          "refundable": true,
+                          "partiallyRefundable": true,
+                          "contact": {
+                            "id": 16,
+                            "uuid": "9c9c0282",
+                            "company": "FeelGood",
+                            "title": "mister",
+                            "firstname": "Hans",
+                            "lastname": "Schmid",
+                            "street": "Dorstrasse 11",
+                            "zip": "1234",
+                            "place": "Habern",
+                            "country": "Schweiz",
+                            "countryISO": "CH",
+                            "date_of_birth": "10.03.1989",
+                            "email": "info@example.com",
+                            "phone": "+413312345678",
+                            "delivery_company": "NewFashion",
+                            "delivery_title": "miss",
+                            "delivery_firstname": "Fabienne",
+                            "delivery_lastname": "Muster",
+                            "delivery_street": "Seestrasse 39",
+                            "delivery_zip": "4321",
+                            "delivery_place": "Nechters",
+                            "delivery_country": "Schweiz",
+                            "delivery_countryISO": "CH"
                           }
+                        }
                       ]
-                  }
+                    }
                   }
                 }
               }
@@ -7116,171 +7121,171 @@
                 "examples": {
                   "Result": {
                     "value": {
-                      "status":"success",
-                      "data":[
-                         {
-                            "id":"american-express",
-                            "name":"American Express",
-                            "label":{
-                               "en":"American Express"
-                            },
-                            "logo":{
-                               "en":"https:\/\/media.zahls.ch\/assets\/cardIcons\/card_american-express.svg"
-                            },
-                            "options_by_psp":{
-                               "36":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "reservation",
-                                     "authorization"
-                                  ],
-                                  "currencies":[
-                                     "CHF"
-                                  ]
-                               }
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": "american-express",
+                          "name": "American Express",
+                          "label": {
+                            "en": "American Express"
+                          },
+                          "logo": {
+                            "en": "https:\/\/media.zahls.ch\/assets\/cardIcons\/card_american-express.svg"
+                          },
+                          "options_by_psp": {
+                            "36": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "reservation",
+                                "authorization"
+                              ],
+                              "currencies": [
+                                "CHF"
+                              ]
                             }
-                         },
-                         {
-                            "id":"apple-pay",
-                            "name":"Apple Pay",
-                            "label":{
-                               "en":"Apple Pay"
-                            },
-                            "logo":{
-                               "en":"https:\/\/media.zahls.ch\/assets\/cardIcons\/card_apple-pay.svg"
-                            },
-                            "options_by_psp":{
-                               "36":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "reservation",
-                                     "authorization"
-                                  ],
-                                  "currencies":[
-                                     "CHF"
-                                  ]
-                               }
+                          }
+                        },
+                        {
+                          "id": "apple-pay",
+                          "name": "Apple Pay",
+                          "label": {
+                            "en": "Apple Pay"
+                          },
+                          "logo": {
+                            "en": "https:\/\/media.zahls.ch\/assets\/cardIcons\/card_apple-pay.svg"
+                          },
+                          "options_by_psp": {
+                            "36": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "reservation",
+                                "authorization"
+                              ],
+                              "currencies": [
+                                "CHF"
+                              ]
                             }
-                         },
-                         {
-                            "id":"mastercard",
-                            "name":"Mastercard",
-                            "label":{
-                               "en":"Mastercard"
+                          }
+                        },
+                        {
+                          "id": "mastercard",
+                          "name": "Mastercard",
+                          "label": {
+                            "en": "Mastercard"
+                          },
+                          "logo": {
+                            "en": "https:\/\/media.zahls.ch.loc\/assets\/cardIcons\/card_mastercard.svg"
+                          },
+                          "options_by_psp": {
+                            "2": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR"
+                              ]
                             },
-                            "logo":{
-                               "en":"https:\/\/media.zahls.ch.loc\/assets\/cardIcons\/card_mastercard.svg"
+                            "5": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "reservation",
+                                "authorization",
+                                "subscription"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR"
+                              ]
                             },
-                            "options_by_psp":{
-                               "2":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR"
-                                  ]
-                               },
-                               "5":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "reservation",
-                                     "authorization",
-                                     "subscription"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR"
-                                  ]
-                               },
-                               "6":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR"
-                                  ]
-                               },
-                               "8":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "subscription"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR"
-                                  ]
-                               },
-                               "12":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "reservation",
-                                     "authorization",
-                                     "subscription"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR"
-                                  ]
-                               },
-                               "13":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR",
-                                     "USD"
-                                  ]
-                               },
-                               "18":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time"
-                                  ],
-                                  "currencies":[
-                                     "CHF",
-                                     "EUR",
-                                     "USD"
-                                  ]
-                               },
-                               "25":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "reservation",
-                                     "authorization",
-                                     "subscription"
-                                  ],
-                                  "currencies":[
-                                     "EUR"
-                                  ]
-                               },
-                               "36":{
-                                  "mode":"test",
-                                  "payment_types":[
-                                     "one-time",
-                                     "reservation",
-                                     "authorization"
-                                  ],
-                                  "currencies":[
-                                     "CHF"
-                                  ]
-                               }
+                            "6": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR"
+                              ]
+                            },
+                            "8": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "subscription"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR"
+                              ]
+                            },
+                            "12": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "reservation",
+                                "authorization",
+                                "subscription"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR"
+                              ]
+                            },
+                            "13": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR",
+                                "USD"
+                              ]
+                            },
+                            "18": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time"
+                              ],
+                              "currencies": [
+                                "CHF",
+                                "EUR",
+                                "USD"
+                              ]
+                            },
+                            "25": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "reservation",
+                                "authorization",
+                                "subscription"
+                              ],
+                              "currencies": [
+                                "EUR"
+                              ]
+                            },
+                            "36": {
+                              "mode": "test",
+                              "payment_types": [
+                                "one-time",
+                                "reservation",
+                                "authorization"
+                              ],
+                              "currencies": [
+                                "CHF"
+                              ]
                             }
-                         }
-                        
+                          }
+                        }
                       ]
-                   }}
+                    }
+                  }
                 }
               }
             }
@@ -7356,31 +7361,32 @@
                 "examples": {
                   "Result": {
                     "value": {
-                      "status":"success",
-                      "data":{
-                         "id":"apple-pay",
-                         "name":"Apple Pay",
-                         "label":{
-                            "en":"Apple Pay"
-                         },
-                         "logo":{
-                            "en":"https:\/\/media.zahls.ch\/assets\/cardIcons\/card_apple-pay.svg"
-                         },
-                         "options_by_psp":{
-                            "36":{
-                               "mode":"test",
-                               "payment_types":[
-                                  "one-time",
-                                  "reservation",
-                                  "authorization"
-                               ],
-                               "currencies":[
-                                  "CHF"
-                               ]
-                            }
-                         }
+                      "status": "success",
+                      "data": {
+                        "id": "apple-pay",
+                        "name": "Apple Pay",
+                        "label": {
+                          "en": "Apple Pay"
+                        },
+                        "logo": {
+                          "en": "https:\/\/media.zahls.ch\/assets\/cardIcons\/card_apple-pay.svg"
+                        },
+                        "options_by_psp": {
+                          "36": {
+                            "mode": "test",
+                            "payment_types": [
+                              "one-time",
+                              "reservation",
+                              "authorization"
+                            ],
+                            "currencies": [
+                              "CHF"
+                            ]
+                          }
+                        }
                       }
-                   }}
+                    }
+                  }
                 },
                 "schema": {
                   "type": "object",
@@ -7542,19 +7548,19 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": {  
-                      "status":"success",
-                      "data":[  
-                          {  
-                              "id":2,
-                              "uuid":"81d545ca",
-                              "time":"2017-10-16 12:29:12",
-                              "status":"confirmed",
-                              "lang":"de",
-                              "psp":"Payrexx_Payments"
-                          }
+                    "value": {
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": 2,
+                          "uuid": "81d545ca",
+                          "time": "2017-10-16 12:29:12",
+                          "status": "confirmed",
+                          "lang": "de",
+                          "psp": "Payrexx_Payments"
+                        }
                       ]
-                  }
+                    }
                   }
                 },
                 "schema": {
@@ -7648,68 +7654,69 @@
                     "value": {
                       "status": "success",
                       "data": [
-                          {
-                              "uuid": "C3F99526",
-                              "mode": "TEST",
-                              "object": "payout",
-                              "amount": 1200,
-                              "total_fees": 0,
-                              "currency": "CHF",
-                              "date": "2023-01-04",
-                              "statement": "Payrexx",
-                              "status": "pending",
-                              "destination": {
-                                  "type": "bank_account",
-                                  "iban": "CH93 0076 2011 6238 5295 7",
-                                  "account_holder": "Demo Firma"
-                              },
-                              "transfers": [],
-                              "merchant": {
-                                  "name": "demo",
-                                  "site_title": "Payrexx",
-                                  "owner": {
-                                      "company": "Demo Firma",
-                                      "first_name": "Vorname",
-                                      "last_name": "Nachname",
-                                      "address": "strasse 1324 1234",
-                                      "zip": "1234",
-                                      "place": "ort",
-                                      "email": "info@zahls.ch"
-                                  }
-                              }
+                        {
+                          "uuid": "C3F99526",
+                          "mode": "TEST",
+                          "object": "payout",
+                          "amount": 1200,
+                          "total_fees": 0,
+                          "currency": "CHF",
+                          "date": "2023-01-04",
+                          "statement": "Payrexx",
+                          "status": "pending",
+                          "destination": {
+                            "type": "bank_account",
+                            "iban": "CH93 0076 2011 6238 5295 7",
+                            "account_holder": "Demo Firma"
                           },
-                          {
-                              "uuid": "C6B438B9",
-                              "mode": "LIVE",
-                              "object": "payout",
-                              "amount": 1000,
-                              "total_fees": 0,
-                              "currency": "CHF",
-                              "date": "2023-01-06",
-                              "statement": "",
-                              "status": "pending",
-                              "destination": {
-                                  "type": null,
-                                  "iban": null,
-                                  "account_holder": null
-                              },
-                              "transfers": [],
-                              "merchant": {
-                                  "name": "demo",
-                                  "site_title": "Payrexx",
-                                  "owner": {
-                                      "company": "Demo Firma",
-                                      "first_name": "Vorname",
-                                      "last_name": "Nachname",
-                                      "address": "strasse 1324 1234",
-                                      "zip": "1234",
-                                      "place": "ort",
-                                      "email": "info@zahls.ch"
-                                  }
-                              }
+                          "transfers": [],
+                          "merchant": {
+                            "name": "demo",
+                            "site_title": "Payrexx",
+                            "owner": {
+                              "company": "Demo Firma",
+                              "first_name": "Vorname",
+                              "last_name": "Nachname",
+                              "address": "strasse 1324 1234",
+                              "zip": "1234",
+                              "place": "ort",
+                              "email": "info@zahls.ch"
+                            }
                           }
+                        },
+                        {
+                          "uuid": "C6B438B9",
+                          "mode": "LIVE",
+                          "object": "payout",
+                          "amount": 1000,
+                          "total_fees": 0,
+                          "currency": "CHF",
+                          "date": "2023-01-06",
+                          "statement": "",
+                          "status": "pending",
+                          "destination": {
+                            "type": null,
+                            "iban": null,
+                            "account_holder": null
+                          },
+                          "transfers": [],
+                          "merchant": {
+                            "name": "demo",
+                            "site_title": "Payrexx",
+                            "owner": {
+                              "company": "Demo Firma",
+                              "first_name": "Vorname",
+                              "last_name": "Nachname",
+                              "address": "strasse 1324 1234",
+                              "zip": "1234",
+                              "place": "ort",
+                              "email": "info@zahls.ch"
+                            }
+                          }
+                        }
                       ]
-                  }}
+                    }
+                  }
                 },
                 "schema": {
                   "type": "object",
@@ -7908,66 +7915,67 @@
                     "value": {
                       "status": "success",
                       "data": [
-                          {
-                              "uuid": "C3F99526",
-                              "object": "payout",
-                              "amount": 1200,
-                              "total_fees": 0,
-                              "currency": "CHF",
-                              "date": "2023-01-04",
-                              "statement": "zahls.ch",
-                              "status": "pending",
-                              "destination": {
-                                  "type": "bank_account",
-                                  "iban": "CH93 0076 2011 6238 5295 7",
-                                  "account_holder": "Demo Firma"
-                              },
-                              "transfers": [],
-                              "merchant": {
-                                  "name": "demo",
-                                  "site_title": "zahls.ch",
-                                  "owner": {
-                                      "company": "Demo Firma",
-                                      "first_name": "Vorname",
-                                      "last_name": "Nachname",
-                                      "address": "strasse 1324 1234",
-                                      "zip": "1234",
-                                      "place": "ort",
-                                      "email": "info@zahls.ch"
-                                  }
-                              }
+                        {
+                          "uuid": "C3F99526",
+                          "object": "payout",
+                          "amount": 1200,
+                          "total_fees": 0,
+                          "currency": "CHF",
+                          "date": "2023-01-04",
+                          "statement": "zahls.ch",
+                          "status": "pending",
+                          "destination": {
+                            "type": "bank_account",
+                            "iban": "CH93 0076 2011 6238 5295 7",
+                            "account_holder": "Demo Firma"
                           },
-                          {
-                              "uuid": "C6B438B9",
-                              "object": "payout",
-                              "amount": 1000,
-                              "total_fees": 0,
-                              "currency": "CHF",
-                              "date": "2023-01-06",
-                              "statement": "",
-                              "status": "pending",
-                              "destination": {
-                                  "type": null,
-                                  "iban": null,
-                                  "account_holder": null
-                              },
-                              "transfers": [],
-                              "merchant": {
-                                  "name": "demo",
-                                  "site_title": "zahls.ch",
-                                  "owner": {
-                                      "company": "Demo Firma",
-                                      "first_name": "Vorname",
-                                      "last_name": "Nachname",
-                                      "address": "strasse 1324 1234",
-                                      "zip": "1234",
-                                      "place": "ort",
-                                      "email": "info@zahls.ch"
-                                  }
-                              }
+                          "transfers": [],
+                          "merchant": {
+                            "name": "demo",
+                            "site_title": "zahls.ch",
+                            "owner": {
+                              "company": "Demo Firma",
+                              "first_name": "Vorname",
+                              "last_name": "Nachname",
+                              "address": "strasse 1324 1234",
+                              "zip": "1234",
+                              "place": "ort",
+                              "email": "info@zahls.ch"
+                            }
                           }
+                        },
+                        {
+                          "uuid": "C6B438B9",
+                          "object": "payout",
+                          "amount": 1000,
+                          "total_fees": 0,
+                          "currency": "CHF",
+                          "date": "2023-01-06",
+                          "statement": "",
+                          "status": "pending",
+                          "destination": {
+                            "type": null,
+                            "iban": null,
+                            "account_holder": null
+                          },
+                          "transfers": [],
+                          "merchant": {
+                            "name": "demo",
+                            "site_title": "zahls.ch",
+                            "owner": {
+                              "company": "Demo Firma",
+                              "first_name": "Vorname",
+                              "last_name": "Nachname",
+                              "address": "strasse 1324 1234",
+                              "zip": "1234",
+                              "place": "ort",
+                              "email": "info@zahls.ch"
+                            }
+                          }
+                        }
                       ]
-                  }}
+                    }
+                  }
                 },
                 "schema": {
                   "type": "object",
@@ -8140,36 +8148,37 @@
                     "value": {
                       "status": "success",
                       "data": {
-                          "uuid": "C6B438B9",
-                          "mode": "LIVE",
-                          "object": "payout",
-                          "amount": 1000,
-                          "total_fees": 0,
-                          "currency": "CHF",
-                          "date": "2023-01-06",
-                          "statement": "",
-                          "status": "pending",
-                          "destination": {
-                              "type": null,
-                              "iban": null,
-                              "account_holder": null
-                          },
-                          "transfers": [],
-                          "merchant": {
-                              "name": "demo",
-                              "site_title": "zahls.ch",
-                              "owner": {
-                                  "company": "Demo Firma",
-                                  "first_name": "Vorname",
-                                  "last_name": "Nachname",
-                                  "address": "strasse 1324 1234",
-                                  "zip": "1234",
-                                  "place": "ort",
-                                  "email": "info@zahls.ch"
-                              }
+                        "uuid": "C6B438B9",
+                        "mode": "LIVE",
+                        "object": "payout",
+                        "amount": 1000,
+                        "total_fees": 0,
+                        "currency": "CHF",
+                        "date": "2023-01-06",
+                        "statement": "",
+                        "status": "pending",
+                        "destination": {
+                          "type": null,
+                          "iban": null,
+                          "account_holder": null
+                        },
+                        "transfers": [],
+                        "merchant": {
+                          "name": "demo",
+                          "site_title": "zahls.ch",
+                          "owner": {
+                            "company": "Demo Firma",
+                            "first_name": "Vorname",
+                            "last_name": "Nachname",
+                            "address": "strasse 1324 1234",
+                            "zip": "1234",
+                            "place": "ort",
+                            "email": "info@zahls.ch"
                           }
+                        }
                       }
-                  }}
+                    }
+                  }
                 },
                 "schema": {
                   "type": "object",
@@ -8334,36 +8343,37 @@
                     "value": {
                       "status": "success",
                       "data": {
-                          "uuid": "C6B438B9",
-                          "mode": "LIVE",
-                          "object": "payout",
-                          "amount": 1000,
-                          "total_fees": 0,
-                          "currency": "CHF",
-                          "date": "2023-01-06",
-                          "statement": "",
-                          "status": "pending",
-                          "destination": {
-                              "type": null,
-                              "iban": null,
-                              "account_holder": null
-                          },
-                          "transfers": [],
-                          "merchant": {
-                              "name": "demo",
-                              "site_title": "zahls.ch",
-                              "owner": {
-                                  "company": "Demo Firma",
-                                  "first_name": "Vorname",
-                                  "last_name": "Nachname",
-                                  "address": "strasse 1324 1234",
-                                  "zip": "1234",
-                                  "place": "ort",
-                                  "email": "info@zahls.ch"
-                              }
+                        "uuid": "C6B438B9",
+                        "mode": "LIVE",
+                        "object": "payout",
+                        "amount": 1000,
+                        "total_fees": 0,
+                        "currency": "CHF",
+                        "date": "2023-01-06",
+                        "statement": "",
+                        "status": "pending",
+                        "destination": {
+                          "type": null,
+                          "iban": null,
+                          "account_holder": null
+                        },
+                        "transfers": [],
+                        "merchant": {
+                          "name": "demo",
+                          "site_title": "zahls.ch",
+                          "owner": {
+                            "company": "Demo Firma",
+                            "first_name": "Vorname",
+                            "last_name": "Nachname",
+                            "address": "strasse 1324 1234",
+                            "zip": "1234",
+                            "place": "ort",
+                            "email": "info@zahls.ch"
                           }
+                        }
                       }
-                  }}
+                    }
+                  }
                 },
                 "schema": {
                   "type": "object",
@@ -8549,19 +8559,19 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": {  
-                      "status":"success",
-                      "data":[  
-                          {  
-                              "id":2,
-                              "uuid":"81d545ca",
-                              "time":"2017-10-16 12:29:12",
-                              "status":"reserved",
-                              "lang":"de",
-                              "psp":"Payrexx_Payments"
-                          }
+                    "value": {
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": 2,
+                          "uuid": "81d545ca",
+                          "time": "2017-10-16 12:29:12",
+                          "status": "reserved",
+                          "lang": "de",
+                          "psp": "Payrexx_Payments"
+                        }
                       ]
-                  }
+                    }
                   }
                 },
                 "schema": {
