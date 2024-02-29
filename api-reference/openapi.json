@@ -432,9 +432,6 @@
                         }
                       ]
                     }
-                  },
-                  "Python JSON dict": {
-                    "value": "{  \n   'referenceId':'test',\n   'hash':'1fc5588c482e5e787eb271555b979f98',\n   'subscriptionState':False,\n   'status':'(waiting|confirmed|authorized|reserved)',\n   'name':'',\n   'amount':200,\n   'vatRate':7.7,\n   'sku':'P01122000',\n   'link':'https://demo.payrexx.com/?payment=1fc5588c482e5e787eb271555b979f98',\n   'preAuthorization':0,\n   'subscriptionPeriodMinAmount':0,\n   'id':38,\n   'createdAt':1481923840,\n   'currency':'CHF',\n   'subscriptionInterval':'',\n   'purpose':{  \n      '7':'test',\n      '2':'test',\n      '1':'test',\n      '3':'test',\n      '4':'test'\n   },\n   'api':True,\n   'subscriptionCancellationInterval':'',\n   'fields':{  \n      'header':{  \n         'names':{  \n            'nl':'',\n            'de':'Kontaktdaten',\n            'it':'Dati di contatto',\n            'en':'Contact details',\n            'fr':'DonnÃ©es de contact'\n         },\n         'active':True,\n         'mandatory':False\n      }\n   },\n   'title':'test',\n   'psp':1,\n   'description':'test',\n   'subscriptionPeriod':'',\n   'invoices':[  \n\n   ]\n}"
                   }
                 },
                 "schema": {
@@ -468,7 +465,7 @@
                           },
                           "link": {
                             "type": "string",
-                            "example": "https://demo.payrexx.com/?payment=382c85eab7a86278e3c3b06a23af2358"
+                            "example": "https://demo.zahls.ch/?payment=382c85eab7a86278e3c3b06a23af2358"
                           },
                           "invoices": {
                             "type": "array"
