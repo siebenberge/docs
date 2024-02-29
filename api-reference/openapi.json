@@ -434,7 +434,52 @@
                     }
                   },
                   "Python JSON dict": {
-                    "value": "{  \n   'referenceId':'test',\n   'hash':'1fc5588c482e5e787eb271555b979f98',\n   'subscriptionState':False,\n   'status':'(waiting|confirmed|authorized|reserved)',\n   'name':'',\n   'amount':200,\n   'vatRate':7.7,\n   'sku':'P01122000',\n   'link':'https://demo.zahls.ch/?payment=1fc5588c482e5e787eb271555b979f98',\n   'preAuthorization':0,\n   'subscriptionPeriodMinAmount':0,\n   'id':38,\n   'createdAt':1481923840,\n   'currency':'CHF',\n   'subscriptionInterval':'',\n   'purpose':{  \n      '7':'test',\n      '2':'test',\n      '1':'test',\n      '3':'test',\n      '4':'test'\n   },\n   'api':True,\n   'subscriptionCancellationInterval':'',\n   'fields':{  \n      'header':{  \n         'names':{  \n            'nl':'',\n            'de':'Kontaktdaten',\n            'it':'Dati di contatto',\n            'en':'Contact details',\n            'fr':'DonnÃ©es de contact'\n         },\n         'active':True,\n         'mandatory':False\n      }\n   },\n   'title':'test',\n   'psp':1,\n   'description':'test',\n   'subscriptionPeriod':'',\n   'invoices':[  \n\n   ]\n}"
+                    "value": {  
+   'referenceId':'test',
+   'hash':'1fc5588c482e5e787eb271555b979f98',
+   'subscriptionState':False,
+   'status':'(waiting|confirmed|authorized|reserved)',
+   'name':'',
+   'amount':200,
+   'vatRate':7.7,
+   'sku':'P01122000',
+   'link':'https://demo.zahls.ch/?payment=1fc5588c482e5e787eb271555b979f98',
+   'preAuthorization':0,
+   'subscriptionPeriodMinAmount':0,
+   'id':38,
+   'createdAt':1481923840,
+   'currency':'CHF',
+   'subscriptionInterval':'',
+   'purpose':{  
+      '7':'test',
+      '2':'test',
+      '1':'test',
+      '3':'test',
+      '4':'test'
+   },
+   'api':True,
+   'subscriptionCancellationInterval':'',
+   'fields':{  
+      'header':{  
+         'names':{  
+            'nl':'',
+            'de':'Kontaktdaten',
+            'it':'Dati di contatto',
+            'en':'Contact details',
+            'fr':'DonnÃ©es de contact'
+         },
+         'active':True,
+         'mandatory':False
+      }
+   },
+   'title':'test',
+   'psp':1,
+   'description':'test',
+   'subscriptionPeriod':'',
+   'invoices':[  
+
+   ]
+}
                   }
                 },
                 "schema": {
