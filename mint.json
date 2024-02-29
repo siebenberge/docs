@@ -4,7 +4,13 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "feedback":
+  {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true    
+  },
+  "favicon": "https://zahls.ch/favicon.ico",
   "colors": {
     "primary": "#271639",
     "light": "#faf5ff",
