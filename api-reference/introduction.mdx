@@ -1,0 +1,44 @@
+---
+title: 'Introduction'
+description: 'Fundamental concepts of the zahls.ch API.'
+---
+
+<Note>
+This documentation is currently a work in progress. If you encounter any problems, please reach out to us at support@zahls.ch.
+</Note>
+
+
+#### Base URL
+
+The Base URL for all API endpoints is:
+
+```bash
+https://api.zahls.ch/
+```
+
+#### Authentication
+Authentication to zahls.ch API is performed via the X-API-KEY header. To authenticate, you need to include the Authorization header with your token in your API requests like so:
+```bash
+X-API-KEY: <<your api key>>
+```
+
+You can create your API-Key in your [zahls.ch Dashboard](https://login.zahls.ch/).
+
+<img height="200" noZoom src="/images/create-api-key.png" />
+
+#### Instanz
+The zahls.ch API needs to know your instance. You can find your instance in the URL when logged in:
+
+```bash
+https://YOUR-INSTANCE.zahls.ch/
+```
+<Note>
+Please use only the instance without https:// and .zahls.ch.
+</Note>
+
+
+
+#### Note
+
+Ensure that you keep your API Secret secure and never expose it in client-side code or places where it could be accessed by unauthorized users.
+
