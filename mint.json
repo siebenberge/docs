@@ -10,7 +10,7 @@
     "suggestEdit": true,
     "raiseIssue": true    
   },
-  "favicon": "https://zahls.ch/favicon.ico",
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#271639",
     "light": "#faf5ff",
